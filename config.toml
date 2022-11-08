@@ -92,7 +92,7 @@ algolia_docsearch = false
 offlineSearch = false
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
-prism_syntax_highlighting = false
+prism_syntax_highlighting = true
 
 # User interface configuration
 [params.ui]
@@ -185,6 +185,12 @@ errorColor = "#CD5C5C"
   url = "https://example.org/slack"
   icon = "fab fa-slack"
   desc = "Chat with other project developers"
+
+[[menu.main]]
+name = "GitHub"
+weight = 60
+url = "https://github.com/wavty/"
+pre = "<i class=\"fa-brands fa-github\"></i>"
 
 # hugo module configuration
 [module]
