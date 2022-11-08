@@ -1,9 +1,9 @@
 ---
-title: "Multi-Bear Domicile Setup"
-date: 2017-01-05
-weight: 4
+title: "Launching Ponycopters"
+linkTitle: "Launching Ponycopters"
+weight: 3
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
+  A short lead description about **launching-ponycopters**.
 ---
 
 {{% pageinfo %}}

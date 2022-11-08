@@ -1,11 +1,9 @@
 ---
-categories: ["Examples"]
-tags: ["test", "sample", "docs"]
-title: "Example Page"
-linkTitle: "Example Page"
-date: 2017-01-05
+title: "example page"
+linkTitle: "example page"
+weight: 1
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
+  A short lead description for example-page.md.
 ---
 
 {{% pageinfo %}}

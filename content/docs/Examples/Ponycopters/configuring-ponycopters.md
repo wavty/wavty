@@ -1,9 +1,9 @@
 ---
-title: "Another Tutorial"
-date: 2017-01-05
-weight: 5
+title: "Configuring Ponycopters"
+linkTitle: "Configuring Ponycopters"
+weight: 4
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
+  A short lead description about **configuring-ponycopters**.
 ---
 
 {{% pageinfo %}}
