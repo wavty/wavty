@@ -2,7 +2,7 @@
 date: 2021-12-14
 title: "基于腾讯云cvm的云原生环境搭建"
 linkTitle: "云原生环境搭建"
-description: "基于腾讯云cvm, 进行云原生开发环境的搭建"
+author: "[taobo](https://twitter.com/ombak826)"
 tags: ["linux", "vim", "nodejs", "commitizen"]
 categories: ["开发环境"]
 ---
@@ -10,6 +10,7 @@ categories: ["开发环境"]
 本文所有操作基于腾讯云 cvm 实例。
 
 <!--more-->
+
 具体配置如下，操作系统为 TencentOS Server 3.1：
 
 ```bash
