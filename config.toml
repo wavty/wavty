@@ -1,15 +1,16 @@
 baseURL = "https://ombak.cn"
 title = "taobo"
 
-# Language settings
-contentDir = "content"
+contentDir = "content/"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+
+# use emoji syntax
+enableEmoji = true
 
 enableRobotsTXT = true
 
 # Will give values to .Lastmod etc.
-enableGitInfo = true
+enableGitInfo = false
 
 # Comment out to enable taxonomies in Docsy
 # disableKinds = ["taxonomy", "taxonomyTerm"]
@@ -77,16 +78,9 @@ icp = "陇ICP备2022000179号-2"
 # point people to the main doc site.
 url_latest_version = "https://ombak.cn"
 
-# Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/wavty/wavty"
-# An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/wavty/wavty"
-
-# Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
-
-# specify a new value if you want to reference another branch in your GitHub links
-github_branch= "main"
+github_branch = "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "85fda0d07eca4407d"

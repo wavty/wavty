@@ -1,10 +1,18 @@
 {{ define "main"}}
     <main id="main">
-      <div>
-       <h1 id="title">Not found</h1>
-       <p>Oops! This page doesn't exist. Try going back to our <a href="{{ "/" | relURL }}">home page</a>.</p>
-
-       <p>You can learn how to make a 404 page like this in <a href="https://gohugo.io/templates/404/">Custom 404 Pages</a>.</p>      
-      </div>
+      <head>
+        <style>
+        </style>
+      </head>
+      <body>
+        <section class="notFound">
+            <div class="img">
+            <img src="https://assets.codepen.io/5647096/backToTheHomepage.png" alt="Back to the Homepage"/>
+            <img src="https://assets.codepen.io/5647096/Delorean.png" alt="El Delorean, El Doc y Marti McFly"/>
+            </div>
+            <p>Oops! This page doesn't exist. Try going back to my <a href="{{ "/" | relURL }}">home page</a>.</p>
+            <p>You can learn how to make a 404 page like this in <a href="https://gohugo.io/templates/404/">Custom 404 Pages</a>.</p>   
+        </section>
+      </body>
     </main>
 {{ end }}
