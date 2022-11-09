@@ -83,13 +83,13 @@ github_repo = "https://github.com/wavty/wavty"
 github_branch = "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "85fda0d07eca4407d"
+# gcs_engine_id = "32b79720165bc4773"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
 
 # Enable Lunr.js offline search
-offlineSearch = false
+offlineSearch = true
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = true
@@ -105,7 +105,7 @@ navbar_logo = false
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
 navbar_translucent_over_cover_disable = false
 # Enable to show the side bar menu in its compact state.
-sidebar_menu_compact = true
+sidebar_menu_compact = false
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
 sidebar_search_disable = false
 
@@ -189,7 +189,7 @@ errorColor = "#CD5C5C"
 [[menu.main]]
 name = "GitHub"
 weight = 60
-url = "https://github.com/wavty/"
+url = "https://github.com/wavty/wavty/"
 pre = "<i class=\"fa-brands fa-github\"></i>"
 
 # hugo module configuration
