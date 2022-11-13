@@ -1,5 +1,5 @@
 baseURL = "https://ombak.cn"
-title = "taobo"
+title = "wavty"
 
 contentDir = "content/"
 defaultContentLanguage = "en"
@@ -83,13 +83,13 @@ github_repo = "https://github.com/wavty/wavty"
 github_branch = "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-# gcs_engine_id = "32b79720165bc4773"
+gcs_engine_id = "32b79720165bc4773"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
 
 # Enable Lunr.js offline search
-offlineSearch = true
+# offlineSearch = false
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = true
@@ -166,7 +166,7 @@ errorColor = "#CD5C5C"
   desc = "Discussion and help from your fellow users"
 [[params.links.user]]
   name ="Twitter"
-  url = "https://twitter.com/ombak826"
+  url = "https://twitter.com/wavty8"
   icon = "fab fa-twitter"
   desc = "Follow us on Twitter to get the latest news!"
 [[params.links.user]]
@@ -187,10 +187,16 @@ errorColor = "#CD5C5C"
   desc = "Chat with other project developers"
 
 [[menu.main]]
-name = "GitHub"
-weight = 60
-url = "https://github.com/wavty/wavty/"
-pre = "<i class=\"fa-brands fa-github\"></i>"
+  name = "GitHub"
+  weight = 40
+  url = "https://github.com/wavty/wavty/"
+  pre = "<i class=\"fa-brands fa-github\"></i>"
+
+[[menu.main]]
+  name = "CV"
+  weight = 30
+  url = "https://wavty.github.io/resume/"
+  post = "<sup><i class=\"pl-1 fa-solid fa-up-right-from-square fa-xs\" aria-hidden=\"true\"></i></sup>"
 
 # hugo module configuration
 [module]

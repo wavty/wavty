@@ -5,3 +5,5 @@ package-lock.json
 yarn.lock
 .hugo_build.lock
 run.*
+_vendor/
+_site
