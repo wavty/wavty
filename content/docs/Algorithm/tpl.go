@@ -48,7 +48,7 @@ func main() {
 	var title = flag.String("t", "例子", "题目中文名.")
 	var url = flag.String("u", "https://leetcode.cn/problems/two-sum/", "the problem internet link.")
 	flag.Parse()
-	
+
 	meta := Meta{
 		Title: fmt.Sprintf("%04d.%s", *no, *title),
 		URL:   *url,
