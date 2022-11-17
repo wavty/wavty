@@ -83,5 +83,5 @@ func getFileFullName(no int, url string) string {
 	}
 	patterns := strings.Split(strings.TrimSuffix(url, "/"), "/")
 	filename := fmt.Sprintf("%04d.%s.md", no, patterns[len(patterns)-1])
-	return filepath.Join(dirs[no/500], filename)
+	return filepath.Join("content/docs/Algorithm",dirs[no/500], filename)
 }

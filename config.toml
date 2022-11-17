@@ -181,9 +181,9 @@ errorColor = "#CD5C5C"
   icon = "fab fa-github"
   desc = "Development takes place here!"
 [[params.links.developer]]
-  name = "Slack"
-  url = "https://example.org/slack"
-  icon = "fab fa-slack"
+  name = "CV"
+  url = "https://wavty.github.io/resume/"
+  icon = "fa fa-user"
   desc = "Chat with other project developers"
 
 [[menu.main]]
@@ -191,11 +191,6 @@ errorColor = "#CD5C5C"
   weight = 40
   url = "https://github.com/wavty/wavty/"
   pre = "<i class=\"fa-brands fa-github\"></i>"
-
-[[menu.main]]
-  name = "CV"
-  weight = 30
-  url = "https://wavty.github.io/resume/"
   post = "<sup><i class=\"pl-1 fa-solid fa-up-right-from-square fa-xs\" aria-hidden=\"true\"></i></sup>"
 
 # hugo module configuration
