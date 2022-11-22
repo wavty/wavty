@@ -76,12 +76,16 @@ func main() {
 }
 
 func getFileFullName(no int, url string) string {
-	dirs := []string{"0000-0499", "0500-0999", "1000-1499", "1500-1999", "2000-2499", "2500-2999"}
-	err := os.MkdirAll(dirs[no/500], os.ModePerm)
+	dirs := []string{"0100-0499", "0500-0999", "1000-1499", "1500-1999", "2000-2499", "2500-2999"}
+	dirName := filepath.Join("content/docs/Algorithm", "0001-0099")
+	if no > 99 {
+		dirName = filepath.Join("content/docs/Algorithm", dirs[no/500])
+	}
+	_, err := os.Stat(dirName)
 	if err != nil {
 		log.Fatal(err)
 	}
 	patterns := strings.Split(strings.TrimSuffix(url, "/"), "/")
 	filename := fmt.Sprintf("%04d.%s.md", no, patterns[len(patterns)-1])
-	return filepath.Join("content/docs/Algorithm",dirs[no/500], filename)
+	return filepath.Join(dirName, filename)
 }
