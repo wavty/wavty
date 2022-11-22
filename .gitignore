@@ -8,3 +8,4 @@ run.*
 run_test.*
 _vendor/
 _site
+.vscode
