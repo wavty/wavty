@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @wavty
 - 👀 I’m interested in GoLang
-- 📫 [![Netlify Status](https://api.netlify.com/api/v1/badges/af8b8de8-b8f5-4788-be49-7eefb0c1d3d7/deploy-status)](https://app.netlify.com/sites/wavty/deploys)
+- 🌱 [![Netlify Status](https://api.netlify.com/api/v1/badges/af8b8de8-b8f5-4788-be49-7eefb0c1d3d7/deploy-status)](https://app.netlify.com/sites/wavty/deploys)
 
 <!-- - 🌱 I’m currently learning ...
 - 💞️ I’m looking to collaborate on ...
