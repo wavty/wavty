@@ -13,6 +13,13 @@ import (
 )
 
 const (
+	templateIndex = `---
+title: {{printf "%q" .Title}}
+linkTitle: {{printf "%q" .Title}}
+description: >
+	Solutions to LeetCode Problems {{.Title}}.
+---`
+
 	templateText = `---
 title: {{printf "%q" .Title}}
 ---
@@ -54,8 +61,28 @@ func main() {
 		URL:   *url,
 	}
 	fileName := getFileFullName(*no, *url)
+	writeFile(fileName, templateText, postStr, meta)
+}
+
+func getFileFullName(no int, url string) string {
+	dirs := []int{(no / 50) * 50, (no/50+1)*50 - 1}
+	dirName := filepath.Join("content/docs/Algorithm", fmt.Sprintf("%04d-%04d", dirs[0], dirs[1]))
+	if _, err := os.Stat(dirName); os.IsNotExist(err) {
+		if err = os.MkdirAll(dirName, os.ModePerm); err != nil {
+			log.Fatal(err)
+		}
+		meta := Meta{Title: fmt.Sprintf("%04d-%04d", dirs[0], dirs[1])}
+		filename := filepath.Join(dirName, "_index.md")
+		writeFile(filename, templateIndex, "", meta)
+	}
+	patterns := strings.Split(strings.TrimSuffix(url, "/"), "/")
+	filename := fmt.Sprintf("%04d.%s.md", no, patterns[len(patterns)-1])
+	return filepath.Join(dirName, filename)
+}
+
+func writeFile(fileName, tpl, help string, meta Meta) {
 	// Create a new template and parse the letter into it.
-	t := template.Must(template.New("algorithm").Parse(templateText))
+	t := template.Must(template.New("algorithm").Parse(tpl))
 	// Run the template to verify the output.
 	f, err := os.Create(fileName)
 	if err != nil {
@@ -69,23 +96,8 @@ func main() {
 		log.Fatalf("execution: %s", err)
 	}
 
-	_, err = io.WriteString(f, render.String()+postStr)
+	_, err = io.WriteString(f, render.String()+help)
 	if err != nil {
 		log.Fatal(err)
 	}
-}
-
-func getFileFullName(no int, url string) string {
-	dirs := []string{"0100-0499", "0500-0999", "1000-1499", "1500-1999", "2000-2499", "2500-2999"}
-	dirName := filepath.Join("content/docs/Algorithm", "0001-0099")
-	if no > 99 {
-		dirName = filepath.Join("content/docs/Algorithm", dirs[no/500])
-	}
-	_, err := os.Stat(dirName)
-	if err != nil {
-		log.Fatal(err)
-	}
-	patterns := strings.Split(strings.TrimSuffix(url, "/"), "/")
-	filename := fmt.Sprintf("%04d.%s.md", no, patterns[len(patterns)-1])
-	return filepath.Join(dirName, filename)
 }
