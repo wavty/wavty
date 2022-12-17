@@ -17,7 +17,7 @@ const (
 title: {{printf "%q" .Title}}
 linkTitle: {{printf "%q" .Title}}
 description: >
-	Solutions to LeetCode Problems {{.Title}}.
+  Solutions to LeetCode Problems {{.Title}}.
 ---`
 
 	templateText = `---
